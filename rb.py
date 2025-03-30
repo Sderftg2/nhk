@@ -4,7 +4,7 @@ import paramiko
 from telegram import Update, InputFile
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
 
-TELEGRAM_BOT_TOKEN = '7110330439:AAGnXS6ZHG_SZ3_mfy2ycxMWRS3hT8uNsNQ'
+TELEGRAM_BOT_TOKEN = '7471575024:AAGdqfubiOpR22yowtenP9iYjPO3M9O3Fv8'
 ADMIN_USER_ID = 5142603617
 USERS_FILE = 'users.txt'
 LOG_FILE = 'log.txt'
