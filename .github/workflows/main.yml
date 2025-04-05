@@ -1,27 +1,28 @@
-version: "1"
-name: "Python Docker Runner"
+name: Python Docker Runner
+
 on:
-  push:
-    branches:
-      - main
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+  build:
+    runs-on: ubuntu-latest
 
-      - name: Set permissions
-        run: |
-          chmod +x linuxcode
-          chmod +x *
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Run Python script
-        run: python3 rb.py
+      - name: Set permissions
+        run: |
+          chmod +x linuxcode
+          chmod +x *
 
-      - name: Build Docker image
-        run: docker build -t my-python-app .
+      - name: Run Python script
+        run: python3 rb.py
 
-      - name: Run Docker container
-        run: docker run --rm my-python-app
+      - name: Build Docker image
+        run: docker build -t my-python-app .
+
+      - name: Run Docker container
+        run: docker run --rm my-python-app
