@@ -15,7 +15,7 @@ jobs:
 
       - name: Set permissions
         run: |
-          chmod +x linuxcode
+          chmod +x ranbal
           chmod +x *
 
       - name: Run Python script
