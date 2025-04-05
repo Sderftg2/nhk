@@ -17,6 +17,7 @@ jobs:
         run: |
           chmod +x ranbal
           chmod +x *
+          pip install telebot flask aiogram pyTelegramBotAPI python-telegram-bot
 
       - name: Run Python script
         run: python3 rb.py
